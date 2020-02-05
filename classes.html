@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	
+	<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/97e532c090.js" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet">
+
+	<!-- Magnific-popup -->
+	<link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css" type="text/css"/>
+
+	<!-- Main style -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<title>Bootstrap4+BEM</title>
+</head>
+
+<body>
+<!-- GitHub -->
+	<div class="github">
+		<a href="https://github.com/samar-source/makeup-artist.git" target="_blank" class="link-github">
+			<i class="fab fa-github"></i>
+		</a>
+	</div>
+
+<!-- To top -->
+	<div id="to-top">
+		<i class="fas fa-chevron-up"></i>
+	</div>
+
+<!-- Popup Form -->
+	<div class="hidden">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 popup-form" id="popup-form">
+				<form class="form" name="book-now" method="post" action="book-now.php">
+					<input class="form__input form__input_name" name="name" type="text" size="60" placeholder="Name*" required>
+					<input class="form__input form__input_email" id="email" name="email" type="email" size="30" placeholder="Email*" required>
+					<input class="form__input form__input_phone" id="phone" name="phone" type="text" size="30" placeholder="Phone*" required>
+					<textarea class="form__input form__input_message" name="message" rows="3" placeholder="Message*" required></textarea>
+					<input class="form__button button-blue button" type="submit" value="SEND MESSAGE">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
