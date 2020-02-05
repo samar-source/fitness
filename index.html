@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	
+	<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/97e532c090.js" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet">
+
+	<!-- Magnific-popup -->
+	<link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css" type="text/css"/>
+
+	<!-- Main style -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<title>Bootstrap4+BEM</title>
+</head>
+
+<body>
+
+	<!-- УДАЛИТЬ    для планина live reload -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?LR-verbose&snipver=1&LiveTest=1"></' + 'script>')</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35730/livereload.js?LR-verbose&snipver=1&LiveTest=1"></' + 'script>')</script>
+<!-- УДАЛИТЬ    для плпгина live reload -->
+	
+
+<!-- GitHub -->
+	<div class="github">
+		<a href="https://github.com/samar-source/makeup-artist.git" target="_blank" class="link-github">
+			<i class="fab fa-github"></i>
+		</a>
+	</div>
+
+<!-- To top -->
+	<div id="to-top">
+		<i class="fas fa-chevron-up"></i>
+	</div>
+
+<!-- Popup Form -->
+	<div class="hidden">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 popup-form" id="popup-form">
+				<form class="form" name="book-now" method="post" action="book-now.php">
+					<input class="form__input form__input_name" name="name" type="text" size="60" placeholder="Name*" required>
+					<input class="form__input form__input_email" id="email" name="email" type="email" size="30" placeholder="Email*" required>
+					<input class="form__input form__input_phone" id="phone" name="phone" type="text" size="30" placeholder="Phone*" required>
+					<textarea class="form__input form__input_message" name="message" rows="3" placeholder="Message*" required></textarea>
+					<input class="form__button button-blue button" type="submit" value="SEND MESSAGE">
+				</form>
+			</div>
+		</div>
+	</div>
+	
+<!-- Header -->
+	<header class="header" id="home">
+		<div class="header__wrapper wrapper"></div>
+			<div class="container menu">
+	<!-- 			<div class="row">
+					<div class="col">
+						<button class="menu-icon"><i class="fas fa-bars"></i></button>
+					</div>
+				</div> -->
+				<div class="row justify-content-between">
+					<div class="col-lg-2">
+						<a href="#" class="logo"><img src="img/home/logo.png" alt="Kallyas Fitness"></a>
+					</div>
+					<div class="col-lg-8 col-sm-4 col-8">
+						<nav>
+							<ul class="nav justify-content-center">
+								<li class="nav-item">
+									<a class="nav-link" href="#home">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#classes">Classes</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#trainers">Trainers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#services">Services</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#gallery">Gallery</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#shop">Shop</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-2">
+						<a href="#" class="button-blue button">Membership</a>
+					</div>
+				</div>
+			</div>
+			<div class="container header-content">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<h1>Personal Trainer</h1>
+						<h4>Stacy Sullivan - Crossfit Training</h4>
+						<a href="#" class="button-blue button">Schedule</a>
+					</div>
+				</div>
+			</div>
+	</header>
+
+<!-- About -->
+	<section class="about" id="about">
+		<div class="about-boxes boxes-container">
+			<div class="box1 box">
+				<div class="box__content">
+					<h4 class="box__title">Who we are</h4>
+					<p class="box__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+					<a href="#popup-form" class="button-white button popup-with-form" id="popup-form">Just do it!</a>
+				</div>
+			</div>
+			<div class="box2 box">
+				<div class="box2__wrapper wrapper">
+					<div>
+						<div class="box__content">
+							<h4 class="box__title">Classes</h4>
+							<p class="box__text ">Morning Stretching lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inctitleididunt ut labore et dolore</p>
+							<a class="box__link">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-caret-right fa-stack-1x fa-inverse"></i>
+								</span>
+								<span class="box__link-text">Find out more</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box3 box">
+				<div class="box3__wrapper wrapper">
+					<div>
+						<div class="box__content">
+							<h4 class="box__title">Jake</h4>
+							<p class="box__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+							<a class="box__link">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-caret-right fa-stack-1x fa-inverse"></i>
+								</span>
+								<span class="box__link-text">Find out more</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+<!-- Trainers -->
+	<section class="trainers section" id="trainers">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-4">
+					<h4 class="title">Trainers</h4>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="slider trainers-slider">
+						<div class="slider__item item item-1">
+							<div class="item-content">
+								<div class="item__content-visible">
+									<h4 class="item__title">Jake</h4>
+									<p class="item__text-blue">Muay Thai Trainer</p>
+								</div>
+								<div class="item__content-hidden">
+									<p class="item__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+								</div>
+								<div class="item__content-hidden button-hidden">
+									<a href="#" class="button-blue button">Schedule sessions</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item item item-2">
+							<div class="item-content">
+								<div class="item__content-visible">
+									<h4 class="item__title">Stacy</h4>
+									<p class="item__text-blue">Cardio Training</p>
+								</div>
+								<div class="item__content-hidden">
+									<p class="item__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+								</div>
+								<div class="item__content-hidden button-hidden">
+									<a href="#" class="button-blue button">Schedule sessions</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item item item-3">
+							<div class="item-content">
+								<div class="item__content-visible">
+									<h4 class="item__title">Victor</h4>
+									<p class="item__text-blue">Crossfit Training</p>
+								</div>
+								<div class="item__content-hidden">
+									<p class="item__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore sed do eiusmod tempor incididunt ut</p>
+								</div>
+								<div class="item__content-hidden button-hidden">
+									<a href="#" class="button-blue button">Schedule sessions</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Record -->
+	<section class="record section" id="record">
+		<div class="record__wrapper wrapper"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<h2>Stop saying<br>“I can't”</h2>
+					<h4>You can. You just choose not to.</h4>
+					<a href="#popup-form" class="button-blue button popup-with-form" id="popup-form">Let’s Train together now!</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Contact-us -->
+	<section class="contact-us section" id="contact-us">
+		<div class="container-fluid">
+			<div class="row justify-content-start">
+				<div class="col-lg-4">
+					<div class="map" id="map"></div>
+				</div>
+				<div class="col-lg-8">
+					<h4 class="contact-us__title title">Contact us</h4>
+					<div class="form-wrapper">
+						<form class="form" name="book-now" method="post" action="book-now.php">
+						<input class="form__input form__input_name" name="name" type="text" size="60" placeholder="Name*" required>
+						<input class="form__input form__input_email" id="email" name="email" type="email" size="30" placeholder="Email*" required>
+						<input class="form__input form__input_phone" id="phone" name="phone" type="text" size="30" placeholder="Phone*" required>
+						<textarea class="form__input form__input_message" name="message" rows="3" placeholder="Message*" required></textarea>
+						<input class="form__button button-blue button" type="submit" value="SEND MESSAGE">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Footer -->
+	<footer class="footer section" id="footer">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-3 col-left">
+					<h6 class="footer__caption caption">Pages</h6>
+					<nav class="footer__nav footer-nav">
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#classes">Classes</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#trainers">Trainers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#services">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#gallery">Gallery</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#shop">Shop</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#blog">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-5 justify-content-center col-center">
+					<a href="#" class="logo"><img src="img/home/logo.png" alt="Kallyas Fitness"></a>
+					<p class="desc">Let’s socialize</p>
+					<ul class="footer__list-icon list-icon">
+						<li class="icon">
+							<a href="#">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li class="icon">
+							<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="icon">
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li class="icon">
+							<a href="#">
+								<i class="fab fa-vk"></i>
+							</a>
+						</li>
+					</ul>
+					<p class="copyright">Copyright ©&#160;2016 <a href="#">Kallyas.net</a><span>&#8194;|&#8194;</span><a href="#">Hogash.com</a><span>&#8194;|&#8194;</span>This Demo&#160;is part&#160;of Kallyas WordPress Theme. All rights reserved.</p>
+				</div>
+				<div class="col-lg-3 col-right">
+					<h6 class="footer__caption caption">Schedule</h6>
+					<div class="box-time">
+						<p><span class="left">Monday - Friday </span><span class="right">9AM - 10AM</span><br><span class="left">Saturday </span><span class="right">9AM - 10AM</span><br><span class="left">Sunday </span><span class="right">10AM - 10AM</span></p>
+					</div>
+					<div class="footer__box box-email">
+						<h6 class="footer__caption caption">Email</h6>
+						<a href="tel:+80023456789" class="email">hello@yourwebsite.com</a>
+					</div>
+					<div class="footer__box box-phone">
+						<h6 class="footer__caption caption">Phone</h6>
+						<a href="tel:+0180018001234" class="phone-number">0 1800 1800 1234</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Scripts -->
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap CDN -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- Slick -->
+	<script type="text/javascript" src="lib/slick/slick.js"></script>
+
+	<!-- Magnific-popup -->
+	<script src="lib/magnific-popup/jquery.magnific-popup.js"></script>
+
+	<!-- Inputmask -->
+	<script src="lib/inputmask/jquery.inputmask.min.js" type="text/javascript"></script>
+
+	 <!-- Initialize and add the google map -->
+	<script>
+		function initMap() {
+			var uluru = {lat: 39.435355, lng: -74.615906};
+			var map = new google.maps.Map(
+				document.getElementById('map'), {
+					zoom: 10, 
+					center: uluru
+				});
+			var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUMRP8CMfWxTLWXeLTIqvmxkU-i9VcA_Y&callback=initMap&language=en"></script>
+
+	<!-- Main js -->
+	<script src="js/script.js"></script>
+</body>
+</html>
